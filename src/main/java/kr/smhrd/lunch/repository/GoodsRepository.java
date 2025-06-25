@@ -1,0 +1,13 @@
+package kr.smhrd.lunch.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import kr.smhrd.lunch.entity.Goods;
+
+@Repository
+public interface GoodsRepository extends JpaRepository<Goods, Integer>{
+	public List<Goods> findAll();
+}
